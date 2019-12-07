@@ -2,14 +2,51 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Cadastro</title>
+        <title>Cadastro de Cursos e Eventos</title>
     </head>
     <body>
-        <h1>Cadastrar</h1>
+        <h1>VRA - GWT(Google Web Toolkit)</h1>
+
+        <table>
+            <tr>
+                <td><a href="index.html"> Home </a></td>
+                <th></th>
+                <td><a href="oquee.html"> A Empresa </a></td>
+                <th></th>
+                <td><a href="cursos-e-eventos.html"> Nossos Cursos </a></td>
+            </tr>
+        </table>
+
         <form method="GET">
-            <p>Nome:
-                <input type="text" name="username" size="90" maxlength="50">
+            <p>
+                <input type="radio" name="tipo" value="curso" checked>Curso
+                <input type="radio" name="tipo" value="evento">Evento
             </p>
+
+            <p>Nome do Curso/Evento: <textarea name="comments" cols="80" rows="1"></textarea></p>
+
+            <p>Descrição: <textarea name="comments" cols="80" rows="3"></textarea></p>
+            <br>
+
+            <p>Treinadores:</p>
+            <p><input type="checkbox" name="treinadores" value="andreza">Andreza Francino</p>
+            <p><input type="checkbox" name="treinadores" value="renata">Renata Ventini</p>
+            <p><input type="checkbox" name="treinadores" value="vivian">Vivian Alves</p>
+
+            <p>Data de Início: <input type="text" name="dataInicio" size="15" maxlength="10" /></p>
+            <p>Data de Término: <input type="text" name="dataTermino" size="15" maxlength="10" /></p>
+            <p>Local: <input type="comments" name="dataInicio" size="80" maxlength="1" /></p>
+            <br>
+
+            <p>Endereço: <textarea name="comments" cols="80" rows="3"></textarea></p>
+
+            <p>Telefone para Contato: <textarea name="comments" cols="30" rows="1"></textarea></p>
+
+            <p>E-Mail para Contato: <textarea name="comments" cols="80" rows="1"></textarea></p>
+
+            <p>Link para mais Informações: <textarea name="comments" cols="80" rows="1"></textarea></p>
+
+            <input type="submit" value="Salvar">
         </form>
     </body>
 </html>
